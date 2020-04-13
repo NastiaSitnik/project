@@ -47,7 +47,6 @@
     <Content Include="Insert.aspx" />
     <Content Include="Delete.aspx" />
     <Content Include="Edit.aspx" />
-    <Content Include="AddEdit.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -88,12 +87,6 @@
     </Compile>
     <Compile Include="Edit.aspx.designer.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="AddEdit.aspx.cs">
-      <DependentUpon>AddEdit.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="AddEdit.aspx.designer.cs">
-      <DependentUpon>AddEdit.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

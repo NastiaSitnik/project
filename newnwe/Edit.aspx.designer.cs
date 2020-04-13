@@ -23,9 +23,13 @@ namespace newnwe {
 		
 		protected System.Web.UI.WebControls.TextBox TextBox2;
 		
+		protected System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+		
 		protected System.Web.UI.WebControls.Label Label3;
 		
 		protected System.Web.UI.WebControls.TextBox TextBox3;
+		
+		protected System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
 		
 		protected System.Web.UI.WebControls.Button Button1;
 		
@@ -35,21 +39,31 @@ namespace newnwe {
 		
 		protected System.Web.UI.WebControls.TextBox TextBox5;
 		
+		protected System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
+		
 		protected System.Web.UI.WebControls.Label Label6;
 		
 		protected System.Web.UI.WebControls.TextBox TextBox6;
+		
+		protected System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
 		
 		protected System.Web.UI.WebControls.Label Label7;
 		
 		protected System.Web.UI.WebControls.TextBox TextBox7;
 		
+		protected System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
+		
 		protected System.Web.UI.WebControls.Label Label8;
 		
 		protected System.Web.UI.WebControls.TextBox TextBox8;
 		
+		protected System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator8;
+		
 		protected System.Web.UI.WebControls.Label Label9;
 		
 		protected System.Web.UI.WebControls.TextBox TextBox9;
+		
+		protected System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator9;
 		
 		protected System.Web.UI.WebControls.Button Button2;
 	}

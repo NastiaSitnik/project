@@ -23,10 +23,10 @@ namespace newnwe
         {
             Page.Title = "Insert";
             Page.Form.Method = "post";
-            Label1.Text = "add a receipt ";
-            Label2.Text = "name"; Label3.Text = "company";
-            Label4.Text = "number"; Label5.Text = "arrears";
-            Label6.Text = "suma";
+            Label1.Text = "Add a receipt ";
+            Label2.Text = "Name"; Label3.Text = "Company";
+            Label4.Text = "Number"; Label5.Text = "Arrears";
+            Label6.Text = "Suma";
             TextBox2.Focus();
             TextBox3.Focus();
             TextBox4.Focus();

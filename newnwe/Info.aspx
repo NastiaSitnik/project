@@ -22,33 +22,24 @@
         <asp:Button ID="Button1" runat="server" Text="Button" Width="125px" 
             onclick="Button1_Click" />
         <br />
+                
         <asp:Button ID="Button2" runat="server" Text="Button" Width="125px" 
             onclick="Button2_Click" />
         <br />
+                 <asp:Button ID="Button4" runat="server" Text="Button" Width="125px" 
+            onclick="Button4_Click" />
+                <br />  
+                <br/>
             <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
          
-               <!-- <br />        
-        <label>Sort: 
-                    <select name="sort" size=" 3 ">
-                      <option value="null" >choose sory type</option> 
-                      <option value="name" > by name </option>  
-                      <option value="name" > by name </option>
-                      <option value="company" > by company </option>
-                      <option value="number" > by number </option>
-                      <option value="arrears" > by arrears </option>
-                      <option value="suma" > by suma </option>
-                        
-                    </select>
-
-        </label>-->
-                
-                <asp:DropDownList ID = "DropdowmList1" runat="server" >
+              <br />        
+             <asp:DropDownList ID = "DropdowmList1" runat="server" >
                     </asp:DropDownList>
                 <asp:Button ID="Button3" runat="server" Text="Button" Width="125px" 
             onclick="Button3_Click" />
                 <br/>
-                <asp:Button ID="Button4" runat="server" Text="Button" Width="125px" 
-            onclick="Button4_Click" />
+                   <br />
+               
         <br />
     </div>
     </form>

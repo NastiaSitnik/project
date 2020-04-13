@@ -14,6 +14,7 @@ namespace newnwe
     {
         string url;
         string sql;
+        public bool flag;
         protected void Page_Load(object sender, EventArgs e)
         {
            
@@ -42,36 +43,40 @@ namespace newnwe
 
                         if (WebForm3.role == "admin")
                         {
-                            sql = "Select * From receipt";
-                            Button1.Text = "Insert ";
-                            Button1.Width = 125;
-                            Button2.Text = "Delete ";
-                            Button2.Width = 125;
-                            Label3.Text = "Sort: ";
-                            if (!IsPostBack)
-                            {
-                                ListItem sortListName = new ListItem("By name", "name");
-                                ListItem sortListCompany = new ListItem("By company", "company");
-                                //ListItem sortListNumber = new ListItem("By number", "number");
-                                ListItem sortListArrears = new ListItem("By arrears", "arrears");
-                                ListItem sortListSuma = new ListItem("By suma", "suma");
-                                DropdowmList1.Items.Add(sortListName);
-                                DropdowmList1.Items.Add(sortListCompany);
-                                //DropdowmList1.Items.Add(sortListNumber);
-                                DropdowmList1.Items.Add(sortListArrears);
-                                DropdowmList1.Items.Add(sortListSuma);
-                               
-                                Button3.Text = " sort ";
+                            flag = true;
+                            
+                                sql = "Select * From receipt";
+                                Button1.Text = "Insert ";
+                                Button1.Width = 125;
+                                Button2.Text = "Delete ";
+                                Button2.Width = 125;
+                                Label3.Text = "Sort: ";
+                                if (!IsPostBack)
+                                {
+                                    ListItem sortListName = new ListItem("By name", "name");
+                                    ListItem sortListCompany = new ListItem("By company", "company");
+                                    //ListItem sortListNumber = new ListItem("By number", "number");
+                                    ListItem sortListArrears = new ListItem("By arrears", "arrears");
+                                    ListItem sortListSuma = new ListItem("By suma", "suma");
+                                    DropdowmList1.Items.Add(sortListName);
+                                    DropdowmList1.Items.Add(sortListCompany);
+                                    //DropdowmList1.Items.Add(sortListNumber);
+                                    DropdowmList1.Items.Add(sortListArrears);
+                                    DropdowmList1.Items.Add(sortListSuma);
 
-                                Button4.Text = "Edit";
+                                    Button3.Text = "Sort ";
 
-                                
-                            }
+                                    Button4.Text = "Edit";
+
+                                }
+                            
+                            
  
                         }
 
                         else
-                        { sql = "Select * From receipt where name = '" + WebForm3.name + "'"; }
+                        { sql = "Select * From receipt where name = '" + WebForm3.name + "'";
+                            Button1.Visible = false; Button2.Visible = false; Button3.Visible = false; Button4.Visible = false;DropdowmList1.Visible = false; }
 
                         NpgsqlDataAdapter dat = new NpgsqlDataAdapter(sql, WebForm3.conn);
                         DataSet ds = new DataSet();
@@ -107,6 +112,7 @@ namespace newnwe
 
 
         }
+
         protected void Button1_Click(object sender, EventArgs e)
         { // Щелчок на кнопке "Add"
             Response.Redirect("Insert.aspx");

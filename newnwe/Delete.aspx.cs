@@ -12,9 +12,9 @@ namespace newnwe
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label1.Text = "delete a receipt ";
-            Label2.Text = "name";
-            Label3.Text = "number";
+            Label1.Text = "Delete a receipt ";
+            Label2.Text = "Name";
+            Label3.Text = "Number";
             TextBox2.Focus();
             TextBox3.Focus();
             Button1.Text = "Ready";
